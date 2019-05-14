@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom';
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
   render() {
     return (
+      <Link to={'/smurfs/${smurfs.id}'}>
       <div className="Smurfs">
         <h1>Smurf Village</h1>
         <ul>
@@ -21,6 +22,7 @@ class Smurfs extends Component {
           })}
         </ul>
       </div>
+      </Link>
     );
   }
 }
